@@ -35,7 +35,7 @@ body {
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #aaa; /* Lighter gray for subtitle contrast */
   margin-bottom: 40px;
 }
 
@@ -50,42 +50,56 @@ body {
 }
 
 .card {
-  background-color: white; /* You may want to change this to another dark color */
+  position: relative;
+  background-color: transparent; /* Remove the dark background effect */
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
   display: flex;
   flex-direction: column;
 }
 
 .card-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
+/* Ensure text overlay with background image */
 .card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  text-align: left;
+  color: white; /* Ensure text is white for visibility */
+  z-index: 10;
+  text-align: center;
 }
 
 .card-title {
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: black; /* Adjust this for readability on light card backgrounds */
+  color: white; /* Ensure readability on the image */
 }
 
 .card-description {
   font-size: 1rem;
-  color: #333;
+  color: #ccc; /* Lighter gray for readability */
   margin-bottom: 20px;
 }
 
 .card-traveler {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
 
 .traveler-image {
@@ -98,11 +112,12 @@ body {
 .traveler-name {
   font-size: 1rem;
   font-weight: bold;
+  color: white; /* Ensure traveler name is visible */
 }
 
 .traveler-role {
   font-size: 0.9rem;
-  color: #999;
+  color: #aaa; /* Slightly lighter color for role */
 }
 
 /* Specific card sizes with precise width and height */

@@ -1,0 +1,30 @@
+/* File: component/NewGem/MapView.css */
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.leaflet-container {
+  filter: brightness(1.1); /* Slightly brighter map for a futuristic feel */
+}
+
+.popup {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Dark transparent background for popup */
+  color: white; /* White text for readability */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding around the text */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+}
+
+.marker-icon {
+  filter: drop-shadow(
+    0 0 5px rgba(0, 255, 0, 0.5)
+  ); /* Neon glow for the marker */
+}

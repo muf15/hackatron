@@ -1,33 +1,13 @@
+// File: FixNew.jsx
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation
-import "../../Styles/NewGem/FindNew.CSS";
-import Cards from "../Homepage/Cards";
-import FixFooter from "./FixFooter";
 
-const FindNew = () => {
+const FixNew = () => {
   return (
-    <div className="find-new-container">
-      <div className="background-image">
-        <div className="text-overlay">
-          <div className="action-buttons">
-            <span className="action-text">Find New Location</span>
-            <Link to="/new-location" className="action-text">New Location</Link> {/* Updated Link */}
-          </div>
-          <h1 className="title">Destinations</h1>
-          <p className="description">
-            Saudi Arabia is rich in heritage and history. The country is home to
-            hundreds of historically important sites.
-          </p>
-        </div>
-      </div>
-      <div>
-        <Cards />
-      </div>
-      <div>
-        <FixFooter />
-      </div>
+    <div>
+      <h2>This is the FixNew component.</h2>
+      {/* Add your component code here */}
     </div>
   );
 };
 
-export default FindNew;
+export default FixNew; // Ensure there is a default export

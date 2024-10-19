@@ -1,12 +1,35 @@
+
+
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
-import "../../Styles/Login/Login.CSS"; // Adjust the path according to your project structure
+import "../../Styles/Login/Login.css"; // Adjust the path according to your project structure
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../../Firebase/firebase.jsx";
 
 const Login = () => {
   const navigate = useNavigate(); // Initialize the navigate function
 
   const handleSignUpRedirect = () => {
     navigate("/signup"); // Navigate to the sign-up page
+  };
+
+  const handleGoogle = async (e) => {
+    e.preventDefault(); // Prevent any default behavior
+
+    const provider = new GoogleAuthProvider();
+
+    try {
+      const result = await signInWithPopup(auth, provider); // Wait for the sign-in to complete
+
+      // You can access the signed-in user's info using result.user if needed
+      console.log("User signed in:", result.user);
+
+      // Navigate to the homepage after successful sign-in
+      navigate("/");
+    } catch (error) {
+      console.error("Google sign-in error:", error);
+      // Handle the error (e.g., display an error message)
+    }
   };
 
   return (
@@ -34,12 +57,7 @@ const Login = () => {
             />
 
             <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="********"
-              required
-            />
+            <input type="password" id="password" placeholder="" required />
 
             <button type="submit" className="login-button">
               Continue
@@ -47,12 +65,14 @@ const Login = () => {
           </form>
           <div className="or-divider">Or</div>
           <div className="social-logins">
-            <button className="social-login google">Log in with Google</button>
+            <button onClick={handleGoogle} className="social-login google">
+              Log in with Google
+            </button>
           </div>
           <p className="signup-link">
             New User? <a href="/">Sign Up Here</a>
           </p>
-          
+
           {/* Sign Up Button */}
           <button onClick={handleSignUpRedirect} className="signup-button">
             Sign Up

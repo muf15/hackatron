@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource/playfair-display": "^5.1.0",
     "@fontsource/poppins": "^5.1.0",
+    "firebase": "^10.14.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0"

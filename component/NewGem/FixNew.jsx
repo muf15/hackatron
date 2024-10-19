@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "../../Styles/NewGem/FindNew.CSS";
 import Cards from "../Homepage/Cards";
 import FixFooter from "./FixFooter";
@@ -10,7 +11,7 @@ const FindNew = () => {
         <div className="text-overlay">
           <div className="action-buttons">
             <span className="action-text">Find New Location</span>
-            <span className="action-text">Mark New Location</span>
+            <Link to="/new-location" className="action-text">New Location</Link> {/* Updated Link */}
           </div>
           <h1 className="title">Destinations</h1>
           <p className="description">

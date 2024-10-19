@@ -1,0 +1,32 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  margin: 50px 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.footer-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.footer-text {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold; /* Makes the font bold */
+  text-align: left; /* Aligns the text to the left */
+  padding-left: 5%; /* Slightly reduced left padding for better alignment */
+  padding-top: 20px;
+}

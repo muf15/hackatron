@@ -1,7 +1,14 @@
 import React from "react";
-import "../../Styles/Login/Login.CSS"; // Make sure you adjust the path according to your project structure
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import "../../Styles/Login/Login.CSS"; // Adjust the path according to your project structure
 
 const Login = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleSignUpRedirect = () => {
+    navigate("/signup"); // Navigate to the sign-up page
+  };
+
   return (
     <div className="login-container">
       {/* Left Section with Background and Text */}
@@ -16,31 +23,40 @@ const Login = () => {
       {/* Right Section with Login Form */}
       <div className="login-right">
         <div className="login-form-container">
-          <h1>Login</h1> {/* Changed the heading to "Login" */}
-
+          <h1>Login</h1>
           <form>
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="johndoe@email.com" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="johndoe@email.com"
+              required
+            />
 
             <label htmlFor="password">Password</label>
-            <input type="password" id="password" placeholder="********" required />
+            <input
+              type="password"
+              id="password"
+              placeholder="********"
+              required
+            />
 
-            {/* Removed Remember me section completely */}
-            
             <button type="submit" className="login-button">
               Continue
             </button>
           </form>
-
           <div className="or-divider">Or</div>
-
           <div className="social-logins">
             <button className="social-login google">Log in with Google</button>
           </div>
-
           <p className="signup-link">
             New User? <a href="/">Sign Up Here</a>
           </p>
+          
+          {/* Sign Up Button */}
+          <button onClick={handleSignUpRedirect} className="signup-button">
+            Sign Up
+          </button>
         </div>
       </div>
     </div>

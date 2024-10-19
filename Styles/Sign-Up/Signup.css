@@ -1,5 +1,5 @@
 /* General container */
-.login-container {
+.signup-container {
   display: flex;
   height: 100vh; /* Full viewport height */
   width: 100vw; /* Full viewport width */
@@ -7,7 +7,7 @@
 }
 
 /* Left Section */
-.login-left {
+.signup-left {
   flex: 1; /* Takes up half of the screen */
   background-image: url("Assets/graffiti-1108415_1280.jpg"); /* Replace with the actual path */
   background-size: cover;
@@ -20,19 +20,19 @@
   padding: 50px;
 }
 
-.login-left h1 {
+.signup-left h1 {
   font-size: 3rem; /* Large title */
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.login-left p {
+.signup-left p {
   font-size: 1.2rem; /* Larger font for readability */
   max-width: 400px;
 }
 
 /* Right Section */
-.login-right {
+.signup-right {
   flex: 1; /* Takes up half of the screen */
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@
   background-color: #f7f7f7;
 }
 
-.login-form-container {
+.signup-form-container {
   background-color: white;
   padding: 40px;
   width: 100%; /* Full width for mobile */
@@ -49,38 +49,23 @@
   border-radius: 10px;
 }
 
-/* Add Login heading */
-.login-form-container h1 {
-  color: #000000;
+/* Add Signup heading */
+.signup-form-container h1 {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
 }
-.signup-button {
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  padding: 10px 20px; /* Padding */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin-top: 20px; /* Space above the button */
-}
-
-.signup-button:hover {
-  background-color: #45a049; /* Darker green on hover */
-}
-
 
 /* Form labels and input */
-.login-form-container label {
+.signup-form-container label {
   font-size: 0.9rem; /* Label size */
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
 }
 
-.login-form-container input {
+.signup-form-container input {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -90,7 +75,7 @@
 }
 
 /* Button styles */
-.login-button {
+.signup-button {
   width: 100%;
   padding: 12px;
   background-color: black; /* Button color */
@@ -103,7 +88,7 @@
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.login-button:hover {
+.signup-button:hover {
   background-color: #444; /* Darker shade on hover */
 }
 
@@ -124,7 +109,7 @@
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-/* Only keep Google login */
+/* Only Google signup */
 .social-login.google {
   background-color: #db4437;
   color: white;
@@ -134,13 +119,7 @@
   background-color: #c13730; /* Darker shade on hover */
 }
 
-/* Removed FB and Apple login containers */
-.social-login.facebook,
-.social-login.apple {
-  display: none;
-}
-
-.signup-link {
+.login-link {
   text-align: center;
   margin-top: 20px;
   font-size: 0.9rem;
@@ -148,19 +127,19 @@
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
-  .login-left h1 {
+  .signup-left h1 {
     font-size: 2.5rem; /* Smaller title on mobile */
   }
 
-  .login-left p {
+  .signup-left p {
     font-size: 1rem; /* Smaller paragraph on mobile */
   }
 
-  .login-form-container {
+  .signup-form-container {
     padding: 20px; /* Reduce padding on mobile */
   }
 
-  .login-button {
+  .signup-button {
     padding: 10px; /* Smaller button padding */
   }
 }

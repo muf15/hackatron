@@ -8,9 +8,9 @@ const Header = () => {
       <div className="header-overlay">
         <nav className="header-nav">
           <ul className="nav-links">
-            <li><Link to="/login">Login in</Link></li> {/* Ensure Link is used correctly */}
-            <li><Link to="#">Find new</Link></li>
-            <li><Link to="#">Mark New</Link></li>
+            <li><Link to="/login">Login in</Link></li> {/* Link to Login */}
+            <li><Link to="/fix-new">Find New</Link></li> {/* Link to Fix New */}
+            <li><Link to="#">Mark New</Link></li> {/* Placeholder for Mark New */}
           </ul>
         </nav>
 

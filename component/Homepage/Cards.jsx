@@ -12,7 +12,7 @@ const Cards = () => {
       size: 'large'
     },
     {
-      image: 'https://storge.pic2.me/c/1360x800/583/61ad131f331660.78573734.jpg',
+      image: 'https://cdn.pixabay.com/photo/2022/09/16/15/53/city-7458934_1280.jpg',
       title: 'Kafd World Trade Centre, Riyadh.',
       description: "The Towering Structure stands as a testament to Saudi Arabia's vision for a thriving business hub.",
       traveler: 'Benjamin Voros',
@@ -36,7 +36,7 @@ const Cards = () => {
       size: 'large'
     },
     {
-      image: 'my-project/Assets/tbilisi-1042511_1280.jpg',
+      image: 'https://cdn.pixabay.com/photo/2017/03/27/12/45/woman-2178480_1280.jpg',
       title: 'The best of Tabuk',
       description: 'Tabuk absorbed Tabouk, the capital city of the Tabuk Region in northwest Saudi Arabia.',
       traveler: 'Jonatan Pie',
@@ -44,7 +44,7 @@ const Cards = () => {
       size: 'small'
     },
     {
-      image: '',
+      image: 'https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014618_1280.jpg',
       title: 'The best things To do in Taif',
       description: 'Taif is a city and governorate in the Mecca Region of Saudi Arabia.',
       traveler: 'Jennifer Gottardi',

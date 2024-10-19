@@ -1,5 +1,6 @@
-import React from 'react';
-import "../../Styles/Homepage/Header.CSS"// Import the CSS file
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link
+import "../../Styles/Homepage/Header.CSS"; // Import the CSS file
 
 const Header = () => {
   return (
@@ -7,9 +8,9 @@ const Header = () => {
       <div className="header-overlay">
         <nav className="header-nav">
           <ul className="nav-links">
-            <li><a href="#">Login in</a></li>
-            <li><a href="#">Find new</a></li>
-            <li><a href="#">Mark New</a></li>
+            <li><Link to="/login">Login in</Link></li> {/* Ensure Link is used correctly */}
+            <li><Link to="#">Find new</Link></li>
+            <li><Link to="#">Mark New</Link></li>
           </ul>
         </nav>
 
